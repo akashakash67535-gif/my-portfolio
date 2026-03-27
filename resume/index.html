@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <div class="container">
+    <img class=img src="../image/resume.png" alt="my image">
+    <div data-aos="fade-right" class="box1">
+      <img class="img1" src="../image/akash.jpeg" alt="myimage">
+      <h2>B.Akash</h2>
+      <p> Web Developer</p>
+      <div class="social">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <a href="../image/resume1.png" download>
+      <button class="btn">Download CV</button>
+      </a>
+      <div class="since">© 2026 All rights reserved.</div>
+    </div>
+    <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     aos-data-duration="1000" class="box2">
+      <div class="name" data-aos="zoom-in">
+        <h1>B.AkasH</h1>
+        <span data-aos="zoom-in-up" id="change"></span>
+        <div class="content">
+        <p>A Web Developer is a professional who builds and maintains websites. They are responsible for how a website looks, works, and performs on the internet.</p>
+        <p>Web development is mainly divided into two parts: Frontend and Backend. Frontend development focuses on the visual part of a website that users see and interact with, such as layout, buttons, colors, and animations.</p>
+         <p>Backend development handles the server-side of a website. It manages databases, user authentication, and application logic. Common backend languages include Python, PHP, and Node.js.</p>
+         <p>A good web developer should have strong problem-solving skills, logical thinking, and a good understanding of programming.</p>
+          </div>
+        </div>
+    </div>
+    <div class="sidebar" data-aos="fade-left">
+      <div class="icon">
+        <a href="resume.html"> <i class="fa-solid fa-house"></i></a>
+        <span>Home</span>
+      </div>
+      <div class="icon">
+        <a href="about.html"><i class="fa-solid fa-user"></i></a>
+        <span>About</span>
+      </div>
+      <div class="icon">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap"></i></a>
+        <span>Education</span>
+      </div>
+      <div class="icon">
+        <a href="skills.html"><i class="fa-solid fa-splotch"></i></a>
+        <span>skills</span>
+      </div>
+      <div class="icon">
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+        <span>Contact</span>
+      </div>
+    </div>
+    <div class="bottombar" data-aos="fade-left">
+      <div class="up">
+        <i class="fa-solid fa-angle-up" onclick="prevPage()"></i>
+        <span>Up</span>
+      </div>
+      <div class="up">
+        <i class="fa-solid fa-angle-down" onclick="nextPage()"></i>
+        <span>Down</span>
+      </div>
+    </div>
+  </div>
+  <script src="updown.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
