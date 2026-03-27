@@ -1,11 +1,11 @@
 // up};down
-const pages = ["resume.html", "about.html", "education.html", "skills.html", "contact.html"];
+const pages = ["index.html", "about.html", "education.html", "skills.html", "contact.html"];
 
 function getCurrentIndex() {
     let currentPage = window.location.pathname.split("/").pop();
 
     if (currentPage === "") {
-        currentPage = "resume.html";
+        currentPage = "index.html";
     }
 
     return pages.indexOf(currentPage);
@@ -27,7 +27,7 @@ const links = document.querySelectorAll(".icon a");
 let currentPage = window.location.pathname.split("/").pop();
 
 if (currentPage === "") {
-    currentPage = "resume.html";
+    currentPage = "index.html";
 }
 
 links.forEach(link => {
